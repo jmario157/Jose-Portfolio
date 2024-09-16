@@ -9,7 +9,7 @@ const Projects = () => {
         initial={{opacity: 0, y: -100}}
         transition={{duration: 1}}
         className='my-20 text-center text-4xl'>
-            Projects "GitHub"
+            Projects
         </motion.h2>
         <div>
             {PROJECTS.map((project, index) => (
