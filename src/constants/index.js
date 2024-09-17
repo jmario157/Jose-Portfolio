@@ -31,10 +31,11 @@ export const REFERENCES = [
   },
   {
     name: "Ing. Wilson Gomez",
-    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus interdum dui nec mi pharetra, et aliquam libero egestas. 
-    Curabitur vulputate, purus ut bibendum facilisis, mauris orci luctus eros, sed lacinia tortor dolor at justo. In ac sapien vulputate, faucibus libero sed, volutpat risus. 
-    Sed sit amet lectus non nulla sodales tempor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-    Pellentesque porttitor magna ac libero malesuada dignissim.`,
+    description: `"He is a person capable of adapting to new technologies, and new challenges excite him. His mindset allows him to stay calm when facing obstacles. 
+    He is highly proactive, possesses strong analytical skills, and has the ability to solve problems and identify errors. He is a great professional with a 
+    forward-looking vision."
+
+    `,
   },
   {
     name: "Ing. Francisco Santos",
