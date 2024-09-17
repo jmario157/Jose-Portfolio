@@ -18,10 +18,10 @@ both frontend and backend challenges.`;
 export const REFERENCES = [
   {
     name: "Ing. Dulce Sanchez",
-    description: `Working with him is a collaborative and results-oriented experience. His approach is based on clear communication, meticulous organization, 
-    and adaptability to meet the specific needs of a project. He strives to thoroughly understand each client's goals and challenges to offer personalized and 
-    effective solutions. His commitment to quality and efficiency ensures that every project is handled with the utmost professionalism, meeting deadlines and 
-    exceeding expectations.`,
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus interdum dui nec mi pharetra, et aliquam libero egestas. 
+    Curabitur vulputate, purus ut bibendum facilisis, mauris orci luctus eros, sed lacinia tortor dolor at justo. In ac sapien vulputate, faucibus libero sed, volutpat risus. 
+    Sed sit amet lectus non nulla sodales tempor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+    Pellentesque porttitor magna ac libero malesuada dignissim.`,
   },
   {
     name: "Ing. Alberto Paz",
@@ -32,17 +32,17 @@ export const REFERENCES = [
   },
   {
     name: "Ing. Wilson Gomez",
-    description: `Working with him is a collaborative and results-oriented experience. His approach is based on clear communication, meticulous organization, 
-    and adaptability to meet the specific needs of a project. He strives to thoroughly understand each client's goals and challenges to offer personalized and 
-    effective solutions. His commitment to quality and efficiency ensures that every project is handled with the utmost professionalism, meeting deadlines and 
-    exceeding expectations.`,
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus interdum dui nec mi pharetra, et aliquam libero egestas. 
+    Curabitur vulputate, purus ut bibendum facilisis, mauris orci luctus eros, sed lacinia tortor dolor at justo. In ac sapien vulputate, faucibus libero sed, volutpat risus. 
+    Sed sit amet lectus non nulla sodales tempor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+    Pellentesque porttitor magna ac libero malesuada dignissim.`,
   },
   {
     name: "Ing. Francisco Santos",
-    description: `Working with him is a collaborative and results-oriented experience. His approach is based on clear communication, meticulous organization, 
-    and adaptability to meet the specific needs of a project. He strives to thoroughly understand each client's goals and challenges to offer personalized and 
-    effective solutions. His commitment to quality and efficiency ensures that every project is handled with the utmost professionalism, meeting deadlines and 
-    exceeding expectations.`,
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus interdum dui nec mi pharetra, et aliquam libero egestas. 
+    Curabitur vulputate, purus ut bibendum facilisis, mauris orci luctus eros, sed lacinia tortor dolor at justo. In ac sapien vulputate, faucibus libero sed, volutpat risus. 
+    Sed sit amet lectus non nulla sodales tempor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+    Pellentesque porttitor magna ac libero malesuada dignissim.`,
   },
 ];
 
