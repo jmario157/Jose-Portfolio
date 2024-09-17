@@ -3,9 +3,17 @@ import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.png";
 import project4 from "../assets/projects/project-4.png";
 
-export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
+export const HERO_CONTENT = `I’m passionate about learning new things and always looking for ways to improve. Although I don't have work experience 
+in my field yet, I enjoy building projects to keep my skills sharp. Initially, I focused solely on Front-end development, but after my internship, 
+where I worked extensively with Back-end technologies, I became more interested in that area.`;
 
-export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
+export const ABOUT_TEXT = `I recently completed my degree in Computer Science Engineering at the Universidad Catolica de Honduras. Although I haven’t 
+gained professional experience in my field beyond my remote internship, I’m eager to learn and open to any opportunities for growth. My main strength 
+lies in Web Development, both frontend and backend, though I lean slightly more towards frontend. I’m a persistent person, dedicated to meeting goals 
+and always aiming to deliver my work at the highest standard possible. I’m a collaborative team player, always open to feedback or suggestions that 
+help me improve my performance. Currently, I’m taking courses in Node.js and MySQL to enhance my skills in backend development, as I want to continue 
+integrating it into my future projects and build full-stack experience. My goal is to continually grow as a developer and contribute effectively to 
+both frontend and backend challenges.`;
 
 export const REFERENCES = [
   {
