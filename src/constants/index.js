@@ -18,17 +18,16 @@ both frontend and backend challenges.`;
 export const REFERENCES = [
   {
     name: "Ing. Dulce Sanchez",
-    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus interdum dui nec mi pharetra, et aliquam libero egestas. 
-    Curabitur vulputate, purus ut bibendum facilisis, mauris orci luctus eros, sed lacinia tortor dolor at justo. In ac sapien vulputate, faucibus libero sed, volutpat risus. 
-    Sed sit amet lectus non nulla sodales tempor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-    Pellentesque porttitor magna ac libero malesuada dignissim.`,
+    description: `"He is a very proactive, efficient individual with the ability to adapt to new technologies. He possesses strong analytical and problem-solving skills 
+    and is always willing to find solutions. His calm demeanor in the face of challenges allows him to maintain composure in stressful situations, enabling him to 
+    find solutions to any difficulties that may arise. He is not only a great professional but also a kind, noble, and gentle person."`,
   },
   {
     name: "Ing. Alberto Paz",
-    description: `Working with him is a collaborative and results-oriented experience. His approach is based on clear communication, meticulous organization, 
+    description: `"Working with him is a collaborative and results-oriented experience. His approach is based on clear communication, meticulous organization, 
     and adaptability to meet the specific needs of a project. He strives to thoroughly understand each client's goals and challenges to offer personalized and 
     effective solutions. His commitment to quality and efficiency ensures that every project is handled with the utmost professionalism, meeting deadlines and 
-    exceeding expectations.`,
+    exceeding expectations."`,
   },
   {
     name: "Ing. Wilson Gomez",
@@ -55,10 +54,10 @@ export const PROJECTS = [
     technologies: ["HTML", "CSS", "JavaScript"],
   },
   {
-    title: "Task Management App",
+    title: "To Do App",
     image: project2,
     description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
+      "An application made for mobile devices, developed with React Native, focused on having a daily task list for everyday use.",
     technologies: ["ReactNative", "CSS", "MySql"],
   },
   {
