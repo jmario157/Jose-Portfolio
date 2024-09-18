@@ -39,10 +39,9 @@ export const REFERENCES = [
   },
   {
     name: "Ing. Francisco Santos",
-    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus interdum dui nec mi pharetra, et aliquam libero egestas. 
-    Curabitur vulputate, purus ut bibendum facilisis, mauris orci luctus eros, sed lacinia tortor dolor at justo. In ac sapien vulputate, faucibus libero sed, volutpat risus. 
-    Sed sit amet lectus non nulla sodales tempor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-    Pellentesque porttitor magna ac libero malesuada dignissim.`,
+    description: `"Working with José Mario has been a pleasure, as he is a very dedicated person who always seeks ways to implement new technologies that significantly 
+    improve and simplify tasks. He makes teamwork easier and is someone you can rely on. I consider him to be very versatile and open to learning, which makes him a 
+    highly valuable colleague."`,
   },
 ];
 
