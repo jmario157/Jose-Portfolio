@@ -9,7 +9,7 @@ const References = () => {
         initial={{opacity: 0, y: -100}}
         transition={{duration: 1}}
         className='my-20 text-center text-4xl'>
-            References
+            Colleagues feedback
         </motion.h2>
         <div>
             {REFERENCES.map((reference, index) => (
