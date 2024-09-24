@@ -1,6 +1,6 @@
-import project1 from "../assets/projects/project-1.png";
+import project1 from "../assets/projects/pro1.png";
 import project2 from "../assets/projects/project-2.jpg";
-import project3 from "../assets/projects/project-3.png";
+import project3 from "../assets/projects/pro3.png";
 import project4 from "../assets/projects/project-4.png";
 
 export const HERO_CONTENT = `I’m passionate about learning new things and always looking for ways to improve. Although I don't have work experience 
