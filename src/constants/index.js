@@ -1,5 +1,5 @@
 import project1 from "../assets/projects/pro1.png";
-import project2 from "../assets/projects/project-2.jpg";
+import project2 from "../assets/projects/project-2.png";
 import project3 from "../assets/projects/pro3.png";
 import project4 from "../assets/projects/project-4.png";
 
@@ -54,10 +54,10 @@ export const PROJECTS = [
     technologies: ["HTML", "CSS", "JavaScript"],
   },
   {
-    title: "To Do App",
+    title: "Website for Maintenance Business",
     image: project2,
     description:
-      "An application made for mobile devices, developed with React Native, focused on having a daily task list for everyday use.",
+      "Website created for a company in the United States that is dedicated to maintaining and remodeling homes..",
     technologies: ["ReactNative", "CSS", "MySql"],
   },
   {
