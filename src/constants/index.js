@@ -58,7 +58,7 @@ export const PROJECTS = [
     image: project2,
     description:
       "Website created for a company in the United States that is dedicated to maintaining and remodeling homes..",
-    technologies: ["ReactNative", "CSS", "MySql"],
+    technologies: ["React", "CSS", "JavaScript"],
   },
   {
     title: "Portfolio Website",
