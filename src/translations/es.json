@@ -1,0 +1,66 @@
+{
+  "hero": {
+    "title": "José Mario",
+    "subtitle": "Jr FullStack Developer",
+    "content": "Me apasiona aprender cosas nuevas y siempre busco formas de mejorar. Aunque aún no tengo experiencia laboral en mi campo, disfruto crear proyectos para mantener mis habilidades al día. Inicialmente me centré solo en el desarrollo Front-end, pero después de mis prácticas, donde trabajé mucho con tecnologías Back-end, me interesé más en esa área."
+  },
+  "about": {
+    "title": "Sobre mí",
+    "text": "Recientemente terminé mi carrera en Ingeniería en Ciencias de la Computación en la Universidad Católica de Honduras. Aunque no he tenido experiencia profesional en mi campo más allá de mis prácticas remotas, estoy dispuesto a aprender y abierto a cualquier oportunidad de crecimiento. Mi principal fortaleza está en el Desarrollo Web, tanto frontend como backend, aunque me inclino un poco más hacia el frontend. Soy una persona persistente, dedicada a cumplir objetivos y siempre buscando entregar mi trabajo con el más alto estándar. Trabajo bien en equipo y estoy abierto a comentarios o sugerencias que me ayuden a mejorar. Actualmente estoy tomando cursos de Node.js y MySQL para mejorar mis habilidades en backend, ya que quiero seguir integrándolo en mis proyectos futuros y ganar experiencia full-stack. Mi meta es seguir creciendo como desarrollador y contribuir de forma efectiva tanto en retos de frontend como de backend."
+  },
+  "tech": {
+    "title": "Tecnologías"
+  },
+  "references": {
+    "title": "Opiniones de colegas",
+    "items": [
+      {
+        "name": "Ing. Dulce Sanchez",
+        "description": "\"Es una persona muy proactiva y eficiente, con capacidad de adaptación a nuevas tecnologías. Posee buenas habilidades analíticas y de resolución de problemas y siempre está dispuesto a encontrar soluciones. Su calma ante los desafíos le permite mantener la compostura en situaciones de estrés y encontrar soluciones a las dificultades que puedan surgir. No solo es un gran profesional sino también una persona amable, noble y gentil.\""
+      },
+      {
+        "name": "Ing. Alberto Paz",
+        "description": "\"Trabajar con él es una experiencia colaborativa y orientada a resultados. Su enfoque se basa en la comunicación clara, la organización meticulosa y la adaptabilidad para cumplir con las necesidades específicas de cada proyecto. Se esfuerza por comprender a fondo los objetivos y retos de cada cliente para ofrecer soluciones personalizadas y efectivas. Su compromiso con la calidad y la eficiencia garantiza que cada proyecto se maneje con la máxima profesionalidad, cumpliendo plazos y superando expectativas.\""
+      },
+      {
+        "name": "Ing. Wilson Gomez",
+        "description": "\"Es una persona capaz de adaptarse a nuevas tecnologías y los nuevos retos lo motivan. Su mentalidad le permite mantener la calma al enfrentar obstáculos. Es muy proactivo, posee fuertes habilidades analíticas y tiene la capacidad de resolver problemas e identificar errores. Es un gran profesional con visión de futuro.\""
+      },
+      {
+        "name": "Ing. Francisco Santos",
+        "description": "\"Trabajar con José Mario ha sido un placer, ya que es una persona muy dedicada que siempre busca formas de implementar nuevas tecnologías que mejoren y simplifiquen las tareas. Facilita el trabajo en equipo y es alguien en quien se puede confiar. Lo considero muy versátil y abierto al aprendizaje, lo que lo hace un colega muy valioso.\""
+      }
+    ]
+  },
+  "projects": {
+    "title": "Proyectos",
+    "items": [
+      {
+        "title": "Sitio E-commerce Frontend",
+        "description": "Proyecto desarrollado para aprender JavaScript, enfocado en un sitio de e-commerce para comprar madera.",
+        "technologies": ["HTML", "CSS", "JavaScript"]
+      },
+      {
+        "title": "Sitio web para negocio de mantenimiento",
+        "description": "Sitio web creado para una empresa en Estados Unidos dedicada al mantenimiento y remodelación de hogares.",
+        "technologies": ["React", "CSS", "JavaScript"]
+      },
+      {
+        "title": "Sitio Portfolio",
+        "description": "Un portfolio personal para mostrar mis habilidades, proyectos realizados y lo que piensan quienes han trabajado conmigo.",
+        "technologies": ["JavaScript", "React", "CSS", "Tailwind"]
+      },
+      {
+        "title": "Proyecto de Práctica Profesional",
+        "description": "Proyecto desarrollado durante mis prácticas profesionales; no lo hice desde cero, pero trabajé en el desarrollo de varios módulos.",
+        "technologies": ["JavaScript", "React", "NodeJs", "MySql", "CSS", "Bootstrap"]
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contacto",
+    "address": "Siguatepeque, Comayagua, Honduras",
+    "phoneNo": "+504 9766 4596",
+    "email": "jsalgado1415@gmail.com"
+  }
+}
