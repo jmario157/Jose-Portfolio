@@ -3,6 +3,37 @@
 @tailwind components;
 @tailwind utilities;
 
-:root{
-  font-family: "Rubik", sans-serif;
+@layer base {
+  :root {
+    font-family: "Rubik", sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    /* Deja aire bajo la navbar fija al saltar con los enlaces ancla. */
+    scroll-padding-top: 6rem;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
+
+@layer utilities {
+  /* Scrollbar discreta para las listas con scroll interno del bento. */
+  .overflow-y-auto {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.15) transparent;
+  }
+
+  .overflow-y-auto::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .overflow-y-auto::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 9999px;
+  }
 }

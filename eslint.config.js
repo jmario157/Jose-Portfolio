@@ -29,10 +29,19 @@ export default [
       ...react.configs['jsx-runtime'].rules,
       ...reactHooks.configs.recommended.rules,
       'react/jsx-no-target-blank': 'off',
+      'react/prop-types': 'off',
+      // React 18 sólo acepta fetchpriority en minúsculas; el camelCase llega en React 19.
+      'react/no-unknown-property': ['error', { ignore: ['fetchpriority'] }],
       'react-refresh/only-export-components': [
         'warn',
         { allowConstantExport: true },
       ],
+    },
+  },
+  {
+    files: ['scripts/**/*.js'],
+    languageOptions: {
+      globals: globals.node,
     },
   },
 ]

@@ -1,54 +1,75 @@
-import React from 'react'
 import { PROJECTS } from '../constants'
-import { motion } from "framer-motion"
+import { FaExternalLinkAlt, FaGithub } from "react-icons/fa"
+import Card from "./ui/Card"
 import { useLanguage } from '../context/LanguageContext'
+
+const linkClass =
+    'inline-flex items-center gap-1.5 rounded-lg border border-white/10 bg-white/[0.04] px-2.5 py-1 text-[0.7rem] font-medium text-neutral-300 transition hover:border-green-500/50 hover:text-green-400'
 
 const Projects = () => {
     const { t } = useLanguage()
-    return <div className='border-b border-neutral-900 pb-4'>
-        <motion.h2 
-        whileInView={{opacity: 1, y: 0}}
-        initial={{opacity: 0, y: -100}}
-        transition={{duration: 1}}
-        className='my-20 text-center text-4xl'>
-            {t.projects.title}
-        </motion.h2>
-        <div>
-            {PROJECTS.map((project, index) => {
-                const content = t.projects.items[index]
-                return (
-                <div key={index} className='mb-8 flex flex-wrap lg:justify-center'>
-                    <motion.div 
-                        whileInView={{opacity: 1, x: 0}}
-                        initial={{opacity: 0, x: -100}}
-                        transition={{duration: 1}}
-                        className='w-full lg:w-1/4'>
-                            <img 
-                                src={project.image} 
-                                width={150} 
-                                height={150} 
-                                alt={content.title}
-                                className='mb-6 rounded'
-                            />
-                    </motion.div>
-                    <motion.div 
-                        whileInView={{opacity: 1, x: 0}}
-                        initial={{opacity: 0, x: 100}}
-                        transition={{duration: 1}}
-                        className='w-full max-w-xl lg:w-3/4'>
-                            <h6 className='mb-2 font-semibold'>{content.title}</h6>
-                            <p className='mb-4 text-neutral-400'>{content.description}</p>
-                            {content.technologies.map((tech, i) => (
-                                <span key={i} className='mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-green-600'>
-                                    {tech}
-                                </span>
-                            ))}
-                    </motion.div>
-                </div>
-                )
-            })}
-        </div>
-    </div>
+
+    return (
+        <Card as='section' id='proyectos' delay={0.1}>
+            <h2 className='mb-5 text-xl font-medium text-white'>{t.projects.title}</h2>
+
+            <div className='grid grid-cols-1 gap-4 sm:grid-cols-2'>
+                {PROJECTS.map((project, index) => {
+                    const content = t.projects.items[index]
+                    return (
+                        <article
+                            key={content.title}
+                            className='group flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03] transition hover:border-white/25'
+                        >
+                            <div className='relative aspect-[16/10] overflow-hidden bg-ink-800'>
+                                <img
+                                    src={project.image}
+                                    alt={content.title}
+                                    loading='lazy'
+                                    decoding='async'
+                                    className='h-full w-full object-cover object-top transition duration-500 group-hover:scale-105'
+                                />
+                                <div className='absolute inset-0 bg-gradient-to-t from-ink-950/90 via-ink-950/20 to-transparent' />
+                            </div>
+
+                            <div className='flex flex-1 flex-col p-4'>
+                                <h3 className='text-sm font-semibold leading-snug text-white'>{content.title}</h3>
+                                <p className='mt-1 text-[0.7rem] text-green-500'>{content.role}</p>
+
+                                <div className='mt-3 flex flex-wrap gap-1.5'>
+                                    {content.technologies.map((tech) => (
+                                        <span
+                                            key={tech}
+                                            className='rounded-md bg-white/[0.06] px-2 py-0.5 text-[0.65rem] font-medium text-neutral-300'
+                                        >
+                                            {tech}
+                                        </span>
+                                    ))}
+                                </div>
+
+                                {(project.liveUrl || project.repoUrl) && (
+                                    <div className='mt-auto flex flex-wrap gap-2 pt-4'>
+                                        {project.liveUrl && (
+                                            <a href={project.liveUrl} target='_blank' rel='noopener noreferrer' className={linkClass}>
+                                                <FaExternalLinkAlt aria-hidden='true' />
+                                                {t.projects.liveLabel}
+                                            </a>
+                                        )}
+                                        {project.repoUrl && (
+                                            <a href={project.repoUrl} target='_blank' rel='noopener noreferrer' className={linkClass}>
+                                                <FaGithub aria-hidden='true' />
+                                                {t.projects.repoLabel}
+                                            </a>
+                                        )}
+                                    </div>
+                                )}
+                            </div>
+                        </article>
+                    )
+                })}
+            </div>
+        </Card>
+    )
 }
 
 export default Projects

@@ -2,10 +2,16 @@
   "hero": {
     "title": "José Mario",
     "subtitle": "Jr FullStack Developer",
-    "content": "Me apasiona aprender cosas nuevas y siempre busco formas de mejorar. Aunque aún no tengo experiencia laboral en mi campo, disfruto crear proyectos para mantener mis habilidades al día. Inicialmente me centré solo en el desarrollo Front-end, pero después de mis prácticas, donde trabajé mucho con tecnologías Back-end, me interesé más en esa área."
+    "content": "Me apasiona aprender cosas nuevas y siempre busco formas de mejorar. Aunque aún no tengo experiencia laboral en mi campo, disfruto crear proyectos para mantener mis habilidades al día. Inicialmente me centré solo en el desarrollo Front-end, pero después de mis prácticas, donde trabajé mucho con tecnologías Back-end, me interesé más en esa área.",
+    "available": "Disponible para trabajar",
+    "ctaContact": "Hablemos",
+    "ctaProjects": "Ver proyectos"
   },
   "about": {
     "title": "Sobre mí",
+    "shortText": "Ingeniero en Ciencias de la Computación por la Universidad Católica de Honduras. Mi fuerte es el desarrollo web full-stack, con inclinación al frontend. Vengo de unas prácticas remotas donde trabajé backend, y hoy sigo formándome en Node.js y MySQL para cerrar el círculo.",
+    "readMore": "Leer más",
+    "readLess": "Leer menos",
     "text": "Recientemente terminé mi carrera en Ingeniería en Ciencias de la Computación en la Universidad Católica de Honduras. Aunque no he tenido experiencia profesional en mi campo más allá de mis prácticas remotas, estoy dispuesto a aprender y abierto a cualquier oportunidad de crecimiento. Mi principal fortaleza está en el Desarrollo Web, tanto frontend como backend, aunque me inclino un poco más hacia el frontend. Soy una persona persistente, dedicada a cumplir objetivos y siempre buscando entregar mi trabajo con el más alto estándar. Trabajo bien en equipo y estoy abierto a comentarios o sugerencias que me ayuden a mejorar. Actualmente estoy tomando cursos de Node.js y MySQL para mejorar mis habilidades en backend, ya que quiero seguir integrándolo en mis proyectos futuros y ganar experiencia full-stack. Mi meta es seguir creciendo como desarrollador y contribuir de forma efectiva tanto en retos de frontend como de backend."
   },
   "tech": {
@@ -34,24 +40,31 @@
   },
   "projects": {
     "title": "Proyectos",
+    "liveLabel": "Ver sitio",
+    "repoLabel": "Código",
+    "roleLabel": "Mi rol",
     "items": [
       {
         "title": "Sitio E-commerce Frontend",
+        "role": "Proyecto personal · Diseño y desarrollo frontend",
         "description": "Proyecto desarrollado para aprender JavaScript, enfocado en un sitio de e-commerce para comprar madera.",
         "technologies": ["HTML", "CSS", "JavaScript"]
       },
       {
         "title": "Sitio web para negocio de mantenimiento",
+        "role": "Cliente real (EE. UU.) · Desarrollo frontend",
         "description": "Sitio web creado para una empresa en Estados Unidos dedicada al mantenimiento y remodelación de hogares.",
         "technologies": ["React", "CSS", "JavaScript"]
       },
       {
         "title": "Sitio Portfolio",
+        "role": "Proyecto personal · Diseño y desarrollo completo",
         "description": "Un portfolio personal para mostrar mis habilidades, proyectos realizados y lo que piensan quienes han trabajado conmigo.",
         "technologies": ["JavaScript", "React", "CSS", "Tailwind"]
       },
       {
         "title": "Proyecto de Práctica Profesional",
+        "role": "Prácticas profesionales · Desarrollo de varios módulos",
         "description": "Proyecto desarrollado durante mis prácticas profesionales; no lo hice desde cero, pero trabajé en el desarrollo de varios módulos.",
         "technologies": ["JavaScript", "React", "NodeJs", "MySql", "CSS", "Bootstrap"]
       }
@@ -59,8 +72,16 @@
   },
   "contact": {
     "title": "Contacto",
+    "intro": "¿Tienes un proyecto o una vacante? Escríbeme y te respondo pronto.",
     "address": "Siguatepeque, Comayagua, Honduras",
     "phoneNo": "+504 9766 4596",
-    "email": "jsalgado1415@gmail.com"
+    "email": "jsalgado1415@gmail.com",
+    "form": {
+      "name": "Nombre",
+      "email": "Correo",
+      "subject": "Asunto",
+      "message": "Mensaje",
+      "send": "Enviar mensaje"
+    }
   }
 }

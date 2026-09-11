@@ -2,10 +2,16 @@
   "hero": {
     "title": "José Mario",
     "subtitle": "Jr FullStack Developer",
-    "content": "I'm passionate about learning new things and always looking for ways to improve. Although I don't have work experience in my field yet, I enjoy building projects to keep my skills sharp. Initially, I focused solely on Front-end development, but after my internship, where I worked extensively with Back-end technologies, I became more interested in that area."
+    "content": "I'm passionate about learning new things and always looking for ways to improve. Although I don't have work experience in my field yet, I enjoy building projects to keep my skills sharp. Initially, I focused solely on Front-end development, but after my internship, where I worked extensively with Back-end technologies, I became more interested in that area.",
+    "available": "Available for work",
+    "ctaContact": "Let's talk",
+    "ctaProjects": "See projects"
   },
   "about": {
     "title": "About Me",
+    "shortText": "Computer Science Engineer from Universidad Católica de Honduras. My strength is full-stack web development, leaning towards frontend. I come from a remote internship where I worked on backend, and I'm currently studying Node.js and MySQL to round out the picture.",
+    "readMore": "Read more",
+    "readLess": "Read less",
     "text": "I recently completed my degree in Computer Science Engineering at the Universidad Catolica de Honduras. Although I haven't gained professional experience in my field beyond my remote internship, I'm eager to learn and open to any opportunities for growth. My main strength lies in Web Development, both frontend and backend, though I lean slightly more towards frontend. I'm a persistent person, dedicated to meeting goals and always aiming to deliver my work at the highest standard possible. I'm a collaborative team player, always open to feedback or suggestions that help me improve my performance. Currently, I'm taking courses in Node.js and MySQL to enhance my skills in backend development, as I want to continue integrating it into my future projects and build full-stack experience. My goal is to continually grow as a developer and contribute effectively to both frontend and backend challenges."
   },
   "tech": {
@@ -34,24 +40,31 @@
   },
   "projects": {
     "title": "Projects",
+    "liveLabel": "Live site",
+    "repoLabel": "Code",
+    "roleLabel": "My role",
     "items": [
       {
         "title": "Frontend E-commerce website",
+        "role": "Personal project · Frontend design and development",
         "description": "Project developed to learn JavaScript, focused on an E-commerce website to buy wood.",
         "technologies": ["HTML", "CSS", "JavaScript"]
       },
       {
         "title": "Website for Maintenance Business",
+        "role": "Real client (USA) · Frontend development",
         "description": "Website created for a company in the United States that is dedicated to maintaining and remodeling homes.",
         "technologies": ["React", "CSS", "JavaScript"]
       },
       {
         "title": "Portfolio Website",
+        "role": "Personal project · Full design and development",
         "description": "A personal portfolio dedicated to showing my skills, abilities, projects completed and what people who have worked with me think.",
         "technologies": ["JavaScript", "React", "CSS", "Tailwind"]
       },
       {
         "title": "Professional Practice Project",
+        "role": "Internship · Development of several modules",
         "description": "Project developed during my professional internship, I did not do it from scratch, but I worked on the development of several modules.",
         "technologies": ["JavaScript", "React", "NodeJs", "MySql", "CSS", "Bootstrap"]
       }
@@ -59,8 +72,16 @@
   },
   "contact": {
     "title": "Contact",
+    "intro": "Got a project or an opening? Send me a message and I'll get back to you soon.",
     "address": "Siguatepeque, Comayagua, Honduras",
     "phoneNo": "+504 9766 4596",
-    "email": "jsalgado1415@gmail.com"
+    "email": "jsalgado1415@gmail.com",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send message"
+    }
   }
 }

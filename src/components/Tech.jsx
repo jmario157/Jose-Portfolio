@@ -1,79 +1,48 @@
-import React from 'react'
-import { useLanguage } from '../context/LanguageContext'
-import { RiHtml5Fill } from "react-icons/ri"
+import { RiHtml5Fill, RiTailwindCssFill, RiReactjsFill, RiNodejsFill } from "react-icons/ri"
 import { IoLogoCss3 } from "react-icons/io"
-import { RiTailwindCssFill } from "react-icons/ri"
-import { FaJsSquare } from "react-icons/fa"
-import { RiReactjsFill } from "react-icons/ri"
-import { RiNodejsFill } from "react-icons/ri"
+import { FaJsSquare, FaPython } from "react-icons/fa"
 import { SiMysql, SiGo, SiReact } from "react-icons/si"
-import { FaPython } from "react-icons/fa"
-import { motion } from "framer-motion"
-
-const iconVariants = (duration) => ({
-    initial: { y: -10 },
-    animate: {
-        y: [10, -10],
-        transition: {
-            duration: duration,
-            ease: 'linear',
-            repeat: Infinity,
-            repeatType: 'reverse',
-        },
-    }
-})
+import Card from "./ui/Card"
+import { useLanguage } from '../context/LanguageContext'
 
 const TECHNOLOGIES = [
-    { Icon: RiHtml5Fill, color: 'text-orange-600', name: 'HTML5', duration: 2.5 },
-    { Icon: IoLogoCss3, color: 'text-blue-600', name: 'CSS3', duration: 2.9 },
-    { Icon: RiTailwindCssFill, color: 'text-cyan-600', name: 'Tailwind CSS', duration: 3.8 },
-    { Icon: FaJsSquare, color: 'text-yellow-400', name: 'JavaScript', duration: 2.3 },
-    { Icon: SiGo, color: 'text-sky-500', name: 'Go', duration: 3.2 },
-    { Icon: RiReactjsFill, color: 'text-cyan-400', name: 'React', duration: 4.1 },
-    { Icon: RiNodejsFill, color: 'text-green-600', name: 'Node.js', duration: 3.6 },
-    { Icon: FaPython, color: 'text-yellow-600', name: 'Python', duration: 3.9 },
-    { Icon: SiMysql, color: 'text-white', name: 'MySQL', duration: 4.5 },
-    { Icon: SiReact, color: 'text-violet-400', name: 'React Native', duration: 3.4 },
+    { Icon: RiHtml5Fill, color: 'text-orange-500', name: 'HTML5' },
+    { Icon: IoLogoCss3, color: 'text-blue-500', name: 'CSS3' },
+    { Icon: RiTailwindCssFill, color: 'text-cyan-400', name: 'Tailwind CSS' },
+    { Icon: FaJsSquare, color: 'text-yellow-400', name: 'JavaScript' },
+    { Icon: SiGo, color: 'text-sky-400', name: 'Go' },
+    { Icon: RiReactjsFill, color: 'text-cyan-300', name: 'React' },
+    { Icon: RiNodejsFill, color: 'text-green-500', name: 'Node.js' },
+    { Icon: FaPython, color: 'text-yellow-300', name: 'Python' },
+    { Icon: SiMysql, color: 'text-neutral-200', name: 'MySQL' },
+    { Icon: SiReact, color: 'text-violet-400', name: 'React Native' },
 ]
-
-const iconBoxClass = "rounded-xl border-2 border-neutral-800 p-3 sm:rounded-2xl sm:border-4 sm:p-4"
-const iconClass = "text-6xl sm:text-6xl lg:text-7xl"
 
 const Tech = () => {
     const { t } = useLanguage()
+
     return (
-        <div className='border-b border-neutral-800 pb-24'>
-            <motion.h2
-                whileInView={{ opacity: 1, y: 0 }}
-                initial={{ opacity: 0, y: -100 }}
-                transition={{ duration: 1 }}
-                className='my-20 text-center text-4xl'>
-                {t.tech.title}
-            </motion.h2>
-            <motion.div
-                whileInView={{ opacity: 1, x: 0 }}
-                initial={{ opacity: 0, x: -100 }}
-                transition={{ duration: 1.5 }}
-                className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-5 items-stretch justify-center gap-3 sm:gap-4 max-w-4xl mx-auto"
-            >
-                {TECHNOLOGIES.map(({ Icon, color, name, duration }) => (
-                    <motion.div
-                        key={name}
-                        variants={iconVariants(duration)}
-                        initial="initial"
-                        animate="animate"
-                        className={`group relative ${iconBoxClass} flex flex-col items-center justify-center min-h-[4.5rem] sm:min-h-[6rem] transition-shadow duration-200 hover:shadow-lg hover:shadow-neutral-900/50`}
-                    >
-                        <div className="flex flex-col items-center justify-center w-full flex-1 py-1">
-                            <Icon className={`${iconClass} ${color} flex-shrink-0 transition-transform duration-200 group-hover:-translate-y-3`} />
-                            <span className="absolute bottom-2 left-0 right-0 text-center text-[0.6rem] sm:text-xs font-medium text-neutral-400 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-                                {name}
-                            </span>
+        <Card as='section' id='tecnologias' delay={0.1} className='flex flex-1 flex-col'>
+            <h2 className='mb-5 text-xl font-medium text-white'>{t.tech.title}</h2>
+
+            <ul className='grid flex-1 grid-cols-5 content-center gap-2.5 sm:gap-3'>
+                {TECHNOLOGIES.map(({ Icon, color, name }) => (
+                    <li key={name} className='group relative'>
+                        <div className='flex aspect-square items-center justify-center rounded-xl border border-white/10 bg-white/[0.04] transition duration-200 group-hover:-translate-y-1 group-hover:border-white/25 group-hover:bg-white/[0.08]'>
+                            <Icon className={`text-2xl sm:text-3xl ${color}`} aria-hidden='true' />
                         </div>
-                    </motion.div>
+                        {/* Tooltip: el nombre visible sólo al pasar el cursor mantiene la cuadrícula limpia. */}
+                        <span
+                            role='tooltip'
+                            className='pointer-events-none absolute -top-8 left-1/2 z-10 -translate-x-1/2 whitespace-nowrap rounded-md border border-white/10 bg-ink-800 px-2 py-1 text-[0.65rem] text-neutral-200 opacity-0 shadow-lg transition-opacity duration-200 group-hover:opacity-100'
+                        >
+                            {name}
+                        </span>
+                        <span className='sr-only'>{name}</span>
+                    </li>
                 ))}
-            </motion.div>
-        </div>
+            </ul>
+        </Card>
     )
 }
 
